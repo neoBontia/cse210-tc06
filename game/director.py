@@ -38,12 +38,13 @@ class Director:
         player = self._roster.get_current()
         guess = player.get_guess()
         hint = self._code.get_result(guess)
+        #print(hint)
         player.update_hint(hint)
 
     def output(self):
-        if self._code.is_guessed():
+        if self._code.guessed():
             winner = self._roster.get_current()
             name = winner.get_name()
             print(f"\n{name} won!")
-            self.keep_playing = False
+            self._keep_playing = False
         self._roster.next_player()

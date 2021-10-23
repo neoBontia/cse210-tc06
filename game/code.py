@@ -43,7 +43,7 @@ class Code:
         numbers = guess._get_numbers()
 
         if numbers == self._key:
-            self.is_guessed = True
+            self._is_guessed = True
             hint = ["X", "X", "X", "X"]
         else:
             for i in range(len(self._key)):
@@ -56,7 +56,7 @@ class Code:
         
         return hint
 
-    def is_guessed(self):
+    def guessed(self):
         """This method returns the _is_guessed attribute.
 
         Args:

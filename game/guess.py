@@ -23,9 +23,7 @@ class Guess:
             self (Guess): an instance of Guess.
             number (int): an integer
         """
-        list1 = []
-        list1[:0] = str(number)
-        return list1
+        return list(map(int, str(number)))
 
     def _get_numbers(self):
         """Returns the list of numbers.
