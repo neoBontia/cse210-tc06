@@ -54,7 +54,7 @@ class Player:
             self (Player): an instance of Player.
             guess (Guess): an instance of Guess
         """
-        self._move = guess
+        self._guess = guess
 
     def update_hint(self, hint):
         """Updates the player's hint.
