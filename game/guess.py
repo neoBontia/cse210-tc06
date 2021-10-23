@@ -8,13 +8,13 @@ class Guess:
         _numbers (list) : List of numbers.
     """
 
-    def __init__(self):
+    def __init__(self, guess):
         """The class constructor.
 
         Args:
             self (Guess): an instance of Guess.
         """
-        self._numbers = []
+        self._numbers = self._to_list(guess)
 
     def _to_list(self, number):
         """Appends a number to the list
@@ -23,7 +23,9 @@ class Guess:
             self (Guess): an instance of Guess.
             number (int): an integer
         """
-        self._numbers.append(number)
+        list1 = []
+        list1[:0] = str(number)
+        return list1
 
     def _get_numbers(self):
         """Returns the list of numbers.
