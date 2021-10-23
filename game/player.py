@@ -1,3 +1,5 @@
+from game.guess import Guess
+
 class Player:
     """A person taking part in a game. Responsility of Player is to give a guess.
 
@@ -17,8 +19,8 @@ class Player:
             self (Player): an instance of Player.
         """
         self._name = name
-        self._guess = None
-        self._hint = []
+        self._guess = Guess()
+        self._hint = ["*", "*", "*", "*"]
 
     def get_guess(self):
         """Returns the player's last guess (an instance of Guess). If the player 

@@ -22,11 +22,12 @@ class Console:
         print("---------------------------------")
         for p in players:
             print(f"Player {p.get_name()}: ", end="")
-            for n in p.get_guess._get_numbers():
+            for n in p.get_guess()._get_numbers():
                 print(n, end="")
-            print(", ")
-            for h in p.get_hint:
+            print(", ", end="")
+            for h in p.get_hint():
                 print(h, end="")
+            print()
         print("---------------------------------")
 
     def read(self, prompt):

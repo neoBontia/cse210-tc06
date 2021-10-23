@@ -8,7 +8,7 @@ class Guess:
         _numbers (list) : List of numbers.
     """
 
-    def __init__(self, guess):
+    def __init__(self, guess="0000"):
         """The class constructor.
 
         Args:
