@@ -20,7 +20,7 @@ class Player:
         self._guess = None
         self._hint = []
 
-    def get_move(self):
+    def get_guess(self):
         """Returns the player's last guess (an instance of Guess). If the player 
         hasn't guessed yet this method returns None.
 
