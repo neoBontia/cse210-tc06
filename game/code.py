@@ -46,7 +46,7 @@ class Code:
             self.is_guessed = True
             hint = ["X", "X", "X", "X"]
         else:
-            for i in range(self._key):
+            for i in range(len(self._key)):
                 if numbers[i] == self._key[i]:
                     hint.append("X")
                 elif numbers[i] in self._key:
